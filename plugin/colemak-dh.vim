@@ -1,16 +1,17 @@
 " Description {{{
+"   Forked from jooize/vim-colemak
 "   Original by Shai Coleman, 2008-04-21.  http://colemak.com/
 "   Modified by Esko, 2012-09-14.
 "
-"   Load colemak.vim after all other Vim scripts.
+"   Load colemak-dh.vim after all other Vim scripts.
 "
 "   Refer to ../README.markdown for keymap explanations.
 " }}}
 " Require Vim >=7.0 {{{
-    if v:version < 700 | echohl WarningMsg | echo "colemak.vim: You need Vim version 7.0 or later." | echohl None | finish | endif
+    if v:version < 700 | echohl WarningMsg | echo "colemak-dh.vim: You need Vim version 7.0 or later." | echohl None | finish | endif
 " }}}
 " Up/down/left/right {{{
-    nnoremap h h|xnoremap h h|onoremap h h|
+    nnoremap m h|xnoremap m h|onoremap m h|
     nnoremap n j|xnoremap n j|onoremap n j|
     nnoremap e k|xnoremap e k|onoremap e k|
     nnoremap i l|xnoremap i l|onoremap i l|
@@ -88,7 +89,7 @@
     nnoremap gL L|xnoremap gL L|
 " }}}
 " Window handling {{{
-    nnoremap <C-W>h <C-W>h|xnoremap <C-W>h <C-W>h|
+    nnoremap <C-W>m <C-W>h|xnoremap <C-W>m <C-W>h|
     nnoremap <C-W>n <C-W>j|xnoremap <C-W>n <C-W>j|
     nnoremap <C-W>e <C-W>k|xnoremap <C-W>e <C-W>k|
     nnoremap <C-W>i <C-W>l|xnoremap <C-W>i <C-W>l|
